@@ -1,0 +1,101 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    
+}
+body{
+    background-color: #fff;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    margin-left: 100px;
+    margin-right: 100px;
+}
+.parent{ 
+    margin: 30px auto;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    
+}
+.square{
+    width: calc(20%);
+    margin: 20px 20px;
+    background-color: #ddd;
+    cursor: pointer;
+    color: #FFF;
+    text-align: center;
+    line-height: 120px;
+    
+}
+.child{
+    background-color: rgba(56, 207, 248, 0.5);
+
+}
+#scaleX:hover {
+    transform: scaleX(2);
+    transition: all 0.5s ease-in-out;
+}
+#scaleY:hover{
+    transform: scaleY(2);
+    transition: all 0.7s ease-in-out;
+}
+#scale:hover{
+    transform: scale(1.5);
+    transition: transform 0.8s ease-in-out;
+
+}
+#translateX:hover{
+     transform: translateX(90px);
+     transition: transform 0.5s ease-in-out;
+
+}
+#translateY:hover{
+    transform: translateY(60px);
+    transition: all 1s ease-in-out;
+}
+#translate:hover{
+    transform: translate(20px,20px);
+    transition: transform 0.5s ease-in-out;
+}
+#matrix:hover{
+    transform:  matrix(1, -1, 0, 1, 0, 0);
+    transition: all 0.5s ease-in-out;
+}
+#rotate:hover{
+    transform: rotate(360deg);
+    transition: all 1s ease-in-out;
+}
+#skew:hover{
+    transform: skew(30deg, 20deg);
+    transition: all 0.5s ease-in-out;
+}
+#skewX:hover{
+    transform: skewX(30deg);
+    transition: all 0.5s ease-in-out;
+}
+#skewY:hover{
+    transform: skewy(30deg);
+    transition: all 0.5s ease-in-out;
+}
+#matrix3d:hover{
+    transform: matrix3d(0.8535533905932737, 0.4999999999999999, 0.14644660940672619, 0, -0.4999999999999999, 0.7071067811865476, 0.4999999999999999, 0, 0.14644660940672619, -0.4999999999999999, 0.8535533905932737, 0, 22.62994231491119, -20.3223304703363, 101.3700576850888, 1);
+    transition: all 0.5s ease-in-out;
+}
+#translate3d:hover{
+    transform: translate3d(1px, 1px, 50px) rotate3d(3, 2, 2, 90deg);
+    transition: all 0.5s ease-in-out;
+}
+#rotateY:hover{
+    transform: perspective(500px) scaleZ(2) rotateY(45deg);
+    transition: all 0.5s ease-in-out;
+}
+#rotateX:hover{
+    transform: perspective(500px) scaleZ(2) rotateX(45deg);
+    transition: all 0.5s ease-in-out;
+}
+#translateZ:hover{
+    transform: rotate3d(3, 2, 2, 90deg) translateZ(50px);
+    transition: all 0.5s ease-in-out;
+}
